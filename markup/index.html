@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+    <title>Fixed Top Navbar Example for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="navbar-fixed-top.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../navbar/">Default</a></li>
+            <li><a href="../navbar-static-top/">Static top</a></li>
+            <li class="active"><a href="./">Fixed top</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+
+      <style type="text/css">
+        .container {
+          text-align: center;
+        }
+        .countdown {
+          margin-top: 100px;
+          font-size: 60px;
+          display: inline-block;
+        }
+        .countdown-controls {
+          clear: both;
+          margin: 0 400px;
+        }
+
+
+        .scrollerClock {
+          height: 80px;
+          font-size: 0px;
+          margin-top: 200px;
+        }
+        .scrollerClock .countdown-unit {
+          overflow: hidden;
+          height: 80px;
+          display: inline-block;
+          font-size: 60px;
+
+        }
+        .scroll {
+          position: relative;
+          list-style: none;
+          float: left;
+          padding: 0;
+          margin: 0;
+          -webkit-transition:0.2s top;
+          -moz-transition:0.2s top;
+          -o-transition:0.2s top;
+          transition:0.2s top;
+        }
+        .scroll.milli {
+          transition: none;
+        }
+        .scroll li {
+          height: 80px;
+          font-size: 60px;
+        }
+        .scrollerClock .divider {
+          font-size: 60px;
+          vertical-align: text-bottom;
+        }
+      </style>
+
+     <!--/*<div class="countdown demo" data-from="30m">
+        <span class="countdown-unit" data-countdown-unit="hours">1</span>:<span class="countdown-unit" data-countdown-unit="minutes">30</span>:<span class="countdown-unit" data-countdown-unit="seconds">00</span>:<span class="countdown-unit" data-countdown-unit="milliSec">00</span>
+      </div>-->
+
+      <div class="btn-group countdown-controls">
+        <button type="button" data-task="start" class="btn btn-default">Start</button>
+        <button type="button" data-task="reset" class="btn btn-default">Reset</button>
+        <button type="button" data-task="pause" class="btn btn-default">Pause</button>
+        <button type="button" data-task="clear" class="btn btn-default">Clear</button>
+      </div>
+
+      <div class="test"></div>
+
+      <div class="scrollerClock">
+        <span class="countdown-unit" data-countdown-unit="hours">
+          <ul class="scroll">
+            <li>0</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+          </ul>
+          <ul class="scroll">
+            <li>0</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+          </ul>
+        </span><span class="divider">:</span>
+        <span class="countdown-unit" data-countdown-unit="minutes">
+          <ul class="scroll">
+            <li>0</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+          </ul>
+          <ul class="scroll">
+            <li>0</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+          </ul>
+        </span><span class="divider">:</span>
+        <span class="countdown-unit" data-countdown-unit="seconds">
+          <ul class="scroll seconds">
+            <li>0</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+          </ul>
+          <ul class="scroll seconds">
+            <li>0</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+          </ul>
+        </span><span class="divider">:</span>
+        <span class="countdown-unit" data-countdown-unit="milliSec">
+          <ul class="scroll milli">
+            <li>0</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+          </ul>
+          <ul class="scroll milli">
+            <li>0</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+          </ul>
+        </span>
+      </div>
+
+      <script type="text/html" id="countdown-scroller">
+        <ul>
+          <li>0</li>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+          <li>9</li>
+          <li>0</li>
+        </ul>
+      </script>
+
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/my_js/countdown.js"></script>
+    <script src="/my_js/clockface.js"></script>
+    <script src="/my_js/site.js"></script>
+
+  </body>
+</html>
